@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop Landing Page</title>
+  <link rel="stylesheet" href="coffy.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>Coffee Delight</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Welcome to Coffee Delight</h2>
+    <p>Your daily cup of happiness</p>
+    <a href="#contact" class="cta-button">Order Now</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h3>Our Specialties</h3>
+    <div class="features-list">
+      <div class="feature-item">
+        <h4>Espresso</h4>
+        <p>Rich and bold, the perfect start to your day.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Latte</h4>
+        <p>Frothy and creamy, a smooth experience.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Pastries</h4>
+        <p>Freshly baked pastries to go with your drink.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h3>Get In Touch</h3>
+    <form action="#" method="post">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Coffee Delight</p>
+  </footer>
+
+  <script src="coffy.js">
+    document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Thank you for contacting us! We will get back to you soon.");
+});
+
+  </script>
+</body>
+</html>
